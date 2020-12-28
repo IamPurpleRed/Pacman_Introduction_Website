@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>小精靈介紹網站 | 敵人介紹</title>
+</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">    
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<style>
+  	p {font-size:20px;padding:1cm 2cm;}
+  </style>
+<body style="background-color:black">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html"><img src="src/img/logo.png" width="25" height="25"></a>
+				<button type="button" class="navbar-toggle collapsed"
+				 data-toggle="collapse" data-target="#navbar">
+		            <span class="sr-only">選單</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+         		</button>          
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="game_introduce.html">遊戲介紹</a></li>
+					<li><a href="background.html">背景故事</a></li>
+					<li><a href="game_author.html">遊戲作者介紹</a></li>
+					<li class="active"><a href="game_enemy.html">敵人介紹</a></li>
+					<li><a href="website_author.html">網頁作者介紹</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h1 style="color:yellow"><b>敵人介紹</b></h1>
+		<hr>
+		<!--第一隻-->
+	    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+	        <h2 style="color:white">布林奇<small>（Blinky）</small></h2>
+	        <p style="color:white">紅色的鬼魂，遊戲開始後第一個出來。<br><br>
+	        追擊模式：他會直直朝小精靈的位置前進，並且會隨著豆子數量減少而加速。</p>
+	    </div>
+	    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	    	<img src="src/img/Blinky.jpg" class="img-responsive" style="display:block; margin:auto;">
+	    </div>
+	    <hr>
+	    <!--第二隻-->
+	    <div class="col-lg-8 col-lg-push-4 col-md-8 col-md-push-4 col-sm-12 col-xs-12">
+	        <h2 style="color:white">平奇<small>（Pinky）</small></h2>
+	        <p style="color:white">粉紅色的鬼魂。<br><br>
+	        追擊模式：她會瞄準小精靈移動位置的前四格（16個像素）推進，試圖伏擊玩家。</p>
+	    </div>
+	    <div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8 col-sm-12 col-xs-12">
+	        <img src="src/img/Pinky.jpg" class="img-responsive" style="display:block; margin:auto;">
+	    </div>
+	    <hr>
+	    <!--第三隻-->
+	    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+	        <h2 style="color:white">英奇<small>（Inky）</small></h2>
+	        <p style="color:white">淺藍色的鬼魂，吃了30個豆子後出來，他是行動最複雜的鬼魂。<br><br>
+	        追擊模式：他會求得Blinky和小精靈之間的向量，設計一個有效的陷阱來夾擊玩家。<small>（首先計算PAC-MAN當前位置的前方2格，然後從Blinky的位置到這一格作向量，這個向量的2倍的位置就是它的目標格）</small></p>
+	    </div>
+	    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	    	<img src="src/img/Inky.jpg" class="img-responsive" style="display:block; margin:auto;">
+	    </div>
+	    <hr>
+	    <!--第四隻-->
+	    <div class="col-lg-8 col-lg-push-4 col-md-8 col-md-push-4 col-sm-12 col-xs-12">
+	        <h2 style="color:white">克萊德<small>（Clyde）</small></h2>
+	        <p style="color:white">橘色的鬼魂，最後一隻出來的鬼魂。<br><br>
+	        追擊模式：他會朝小精靈的位置前進，但直到他接近小精靈8格時，他會撤退回到屬於他的迷宮角落<small>（左下）</small></p>
+	    </div>
+	    <div class="col-lg-4 col-lg-pull-8 col-md-4 col-md-pull-8 col-sm-12 col-xs-12">
+	        <img src="src/img/Clyde.jpg" class="img-responsive" style="display:block; margin:auto;">
+	    </div>
+	</div>
+	<br>
+	<div class="container">
+		<p style="position:relative;bottom:0;background-color:yellow">
+      		來源：<a href="https://zh.wikipedia.org/wiki/%E5%90%83%E8%B1%86%E4%BA%BA">維基百科</a>、<a href="https://steamcommunity.com/workshop/browse/?appid=323850&browsesort=toprated&section=readytouseitems&requiredtags%5B%5D=pacman">圖片來源
+    	</p>
+    </div>
+</body>
